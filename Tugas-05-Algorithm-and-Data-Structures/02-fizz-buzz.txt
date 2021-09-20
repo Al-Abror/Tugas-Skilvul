@@ -1,0 +1,11 @@
+STORE “n” with any value
+
+FOR 1 to n :
+	IF n mod  3 == 0 :
+		DISPLAY “Fizz”
+
+	ELSE IF n mod 5 == 0 :
+		DISPLAY “Buzz”
+
+	ELSE :
+		DISPLAY n

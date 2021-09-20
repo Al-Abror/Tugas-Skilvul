@@ -1,0 +1,13 @@
+STORE NilaiAwal
+
+if NilaiAwal >= 68:
+	NilaiAkhir = NilaiAwal//5
+	if sisa < 3:
+		NilaiAkhir = NilaiAwal + 1
+		if NilaiAwal mod 5 == 0:
+			DISPLAY NilaiAkhir
+		ELSE :
+			NilaiAkhir = NilaiAwal + 1
+			DISPLAY NilaiAkhir
+else:
+	return NilaiAwal

@@ -1,0 +1,13 @@
+Read string from the user
+Calculate the length of the string
+Initialize rev = “ ”   [empty string]
+Initialize i = length - 1 
+
+Repeat until i >= 0 :
+	rev = rev + Character at position ‘i’ of the string
+	i = i – 1
+
+If string == rev :
+	Print “TRUE”
+Else:
+	Print “False”
