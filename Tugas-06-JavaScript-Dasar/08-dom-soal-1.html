@@ -172,22 +172,47 @@
     <!-- JavaScript -->
     <script>
       /// EDIT HERE
-      // const modal = document.querySelector(".card")
-      // const katalog = document.querySelector(".card")
-      // document.querySelector("card").addEventListener("click", function popUp());
+      let cards = document.getElementsByClassName("card");
+      let cardObject= {}
 
-      // function popUp()
-      let card = document.querySelector(".card");
-      let modal = document.querySelector(".modal");
-      let buttons = document.querySelectorAll(".btn-modal");
-
-      for (buttons of buttons){
-        const cardTitle = document.querySelector(`#card-${cardId}-title`);
-        const cardId = elBtnModal.getAttribute('card-id');
-        buttons.addEventListener("click")
+      for(let i=0; i < cards.length; i++) {
+        cardObject[`title${i+1}`] = document.getElementById(`card-0${i+1}-title`).textContent
+        cardObject[`image${i+1}`] = document.getElementById(`card-0${i+1}-image`).src             
+        cardObject[`text${i+1}`] = document.getElementById(`card-0${i+1}-text`).textContent
       }
-      // const addTweetButton = document.getElementById("submit-btn");
-      // addTweetButton.addEventListener("click", onClickAddTweetButton);
+      
+      let mTitle = document.getElementById('modal-title')
+      let mImage = document.getElementById('modal-image')
+      let mText = document.getElementById ('modal-text')
+
+      cards[0].addEventListener('click', function(){
+        mTitle.innerHTML = cardObject['title1']
+        mImage.src = cardObject["image1"]
+        mText.innerHTML = cardObject['text1']
+      }
+      )
+
+      cards[1].addEventListener('click', function(){
+        mTitle.innerHTML = cardObject['title2']
+        mImage.src = cardObject["image2"]
+        mText.innerHTML = cardObject['text2']
+      }
+      )
+
+      cards[2].addEventListener('click', function(){
+        mTitle.innerHTML = cardObject['title3']
+        mImage.src = cardObject["image3"]
+        mText.innerHTML = cardObject['text3']
+      }
+      )
+     
+      cards[3].addEventListener('click', function(){
+        mTitle.innerHTML = cardObject['title4']
+        mImage.src = cardObject["image4"]
+        mText.innerHTML = cardObject['text4']
+      }
+      )
+
     </script>
 
     <!-- Bootstrap Bundle with Popper -->

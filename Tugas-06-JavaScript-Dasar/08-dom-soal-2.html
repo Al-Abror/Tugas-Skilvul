@@ -166,9 +166,41 @@
       const elBtnCancel = document.querySelector('#btn-cancel');
       
       // EDIT HERE
-      
+      function comment(){
+        elCommentSection.classList.remove("d-none");
+        elBtnComment.classList.add("d-none")
+      }
 
+      function submit(){
+        event.preventDefault();
+
+        let username = elInputUsername.value;
+        let comments = elInputComment.value;
+        
+        let li = document.createElement('li')
+        li.className = "list-group-item d-flex justify-content-between align-items-start"
+
+        let x = document.createElement('div')
+        x.className = "ms-2 me-auto"
+
+        let y = document.createElement('div')
+        y.className = "fw-bold text-capitalize"
+        y.textContent = username
+        x.appendChild(y)
+
+        let comments2 = document.createTextNode(comments)
+        x.appendChild(comments2)
+
+        li.appendChild(x)
+        elCommentList.prepend(li)
+        elCommentSection.classList.add('d-none')        
+        elBtnComment.classList.remove("d-none")         
+        elCommentForm.reset() 
+      }
+      
+      elBtnComment.addEventListener("click", () => comment());
+
+      elBtnSubmit.addEventListener("click", () => submit(event))
     </script>
   </body>
 </html>
-
