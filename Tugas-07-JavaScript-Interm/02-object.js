@@ -96,7 +96,21 @@ const items = [
 
 const calculateIncome = (items) => {
   /// EDIT DOWN HERE
-
+  return items.reduce((acc, cur) => {
+    const btcSum = cur.btc.sell - cur.btc.buy
+    const dogeSum = cur.doge.sell - cur.doge.buy
+    const ethSum = cur.eth.sell - cur.eth.buy
+    
+    return {
+        btc: acc.btc + btcSum,
+        doge: acc.doge + dogeSum,
+        eth: acc.eth + ethSum
+    }
+  }, {
+    btc: 0,
+    doge: 0,
+    eth: 0
+  })
 }
 
 console.log(calculateIncome(items))

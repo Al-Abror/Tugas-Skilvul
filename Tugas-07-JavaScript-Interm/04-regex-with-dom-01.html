@@ -20,7 +20,7 @@
       const elInputUsername = document.querySelector("#username");
       const elBtnSubmit = document.querySelector("#btn-submit");
       const elForm = document.querySelector("#form");
-      const usernameValidator = new RegExp("^[^0-9][^/_!@#$%^&*.]{5,}");
+      const usernameValidator = new RegExp("^[A-Za-z][A-Za-z0-9]{5,}");
 
       elForm.onsubmit = function(e) {
         e.preventDefault();
