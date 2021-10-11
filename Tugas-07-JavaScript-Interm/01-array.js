@@ -2,10 +2,7 @@
 const arr = [1, 2, 3];
 const arr2 = [8, 1, 5, 7];
 function reverse(arr) {
-    // Sort the array
-    // const sorted = arr.sort();
     const result = [];
-    // Add the array to the result in descending order
     arr.forEach(function(value){
         result.unshift(value);
     })
