@@ -1,0 +1,23 @@
+1. Apa itu responsive web design?
+adalah halaman web yang secara otomatis menyesuaikan untuk berbagai ukuran layar dan area pandang (secara otomatis mengubah ukuran, menyembunyikan, 
+mengecilkan, atau memperbesar konten website) sehingga dapat terlihat bagus di semua perangkat
+
+2. Sebutkan apa saja relative units yang dimiliki oleh CSS?
+em => Ukuran font induk, dalam hal properti tipografi seperti font-size, dan ukuran font elemen itu sendiri, dalam kasus properti lain seperti width.
+ex => x-tinggi font elemen.
+ch => Ukuran muka (lebar) dari mesin terbang "0" dari font elemen.
+rem => Ukuran font elemen root.
+lh => Ketinggian garis elemen.
+vw => 1% dari lebar viewport.
+vh => 1% dari ketinggian viewport.
+vmin => 1% dari dimensi area pandang yang lebih kecil.
+vmax => 1% dari dimensi area pandang yang lebih besar.
+
+3. Apa itu breakpoint? Bagaimana cara kita membuat hal tersebut?
+adalah batasan ukuran untuk mengubah bentuk responsive web design
+
+4. Apa yang dapat kita gunakan untuk memanipulasi tata letak suatu element dalam bidang 1 dimensi?
+flexbox
+
+5. Apa yang dapat kita gunakan untuk memanipulasi tata letak suatu element dalam bidang 2 dimensi?
+grid
