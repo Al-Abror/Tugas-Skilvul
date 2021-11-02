@@ -2,7 +2,7 @@ import styled, { StyledComponent } from "styled-components";
 
 export const StyledButton = styled.button`
   cursor: pointer;
-  padding: 1.5em 0.5em;
+  padding: 0.5em 1.5em;
   font-family: sans-serif;
   font-size: 1.25em;
   border: ${(props) => (props.outline ? "lightblue" : "white")} 1px solid;
