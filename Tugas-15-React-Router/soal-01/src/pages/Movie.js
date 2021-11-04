@@ -7,7 +7,7 @@ const Movie = () => {
   let { id } = useParams();
   const movie = data.find((o) => o.mal_id === Number(id));
   if (!movie) {
-    return <Redirect to="./NotFound" />;
+    return <Redirect to="../NotFound" />;
   }
   return (
     <div className="row my-5">
