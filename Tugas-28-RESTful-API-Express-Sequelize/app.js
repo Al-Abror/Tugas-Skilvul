@@ -1,8 +1,7 @@
-// Import Module
 const express = require("express");
 const Sequelize = require("sequelize");
 
-// Create Port
+// Port
 const app = express();
 const PORT = 3000;
 
@@ -11,12 +10,6 @@ app.use(express.json());
 app.use(express.urlencoded({
     extended: true
 }));
-
-// connect to database online
-// const sequlize = new Sequelize("sql6457557", "sql6457557", "DiTL4U4rk6", {
-//     host: "sql6.freemysqlhosting.net",
-//     dialect: "mysql",
-// });
 
 // connect to database localhost
 const sequlize = new Sequelize("animals", "root", "", {
@@ -122,7 +115,6 @@ app.patch("/hewan/:id", (req, res) => {
             });
         })
         .catch(error => console.log(error))
-
 })
 
 // Delete animal by id
@@ -140,8 +132,6 @@ app.delete("/hewan/:id", (req, res) => {
         .catch(error => console.log(error))
 })
 
-
-// Run Server
 app.listen(PORT, () => {
     console.log("server berjalan");
 });
